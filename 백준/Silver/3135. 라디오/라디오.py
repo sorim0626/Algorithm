@@ -1,16 +1,16 @@
 a, b = map(int, input().split())
 n = int(input())
-favorites = []
+fav = []
 
 for _ in range(n):
     f = int(input())
-    favorites.append(f)
+    fav.append(f)
 
-min_clicks = abs(a - b)
+m = abs(a - b)
 
 
-for fav in favorites:
-    clicks = abs(fav - b) + 1  
-    min_clicks = min(min_clicks, clicks)
+for i in fav:
+    c = abs(i - b) + 1  
+    m = min(m, c)
 
-print(min_clicks)
+print(m)
